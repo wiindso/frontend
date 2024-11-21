@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра: В кого більше число</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .scoreboard, .numbers {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .score, .number {
+            padding: 10px 20px;
+            background-color: #1f1f1f;
+            border: 2px solid #444;
+            border-radius: 5px;
+            font-size: 1.5em;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 30px;
+            margin: 20px 0;
+            font-size: 1.5em;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Гра: В кого більше число</h1>
+    <div class="scoreboard">
+        <div class="score" id="userScore">Користувач: 0</div>
+        <div class="score" id="computerScore">Комп'ютер: 0</div>
+    </div>
+    <div class="numbers">
+        <div class="number" id="userNumber">Число Користувача: -</div>
+        <div class="number" id="computerNumber">Число Комп'ютера: -</div>
+    </div>
+    <button class="button" id="playButton">Грати</button>
+    <div class="result hidden" id="winnerMessage"></div>
+    <script src="script.js"></script>
+</body>
+</html>
